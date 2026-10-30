@@ -1,605 +1,138 @@
-<!DOCTYPE html>
-
+<!doctype html>
 <html lang="pt-BR">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width,initial-scale=1" name="viewport"/>
-<meta content="#000000" name="theme-color"/>
-<meta content="Olimpy Arts — sites, social media, direção visual e estratégia para marcas que querem ser percebidas em outro nível." name="description"/>
-<title>Olimpy Arts — Mude o jogo da sua marca</title>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Manrope:wght@500;600;700;800&amp;display=swap" rel="stylesheet"/>
-<link href="styles.css" rel="stylesheet"/>
-<link href="olimpy-logo.png" rel="icon" type="image/png"/></head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0b0b0a" />
+  <meta name="description" content="Olimpy Arts: thumbnails para YouTube, identidade visual, artes para streamers, redes sociais, banners e sites para marcas e criadores." />
+  <title>Olimpy Arts | Thumbnails, Design Gráfico, Artes e Sites</title>
+  <link rel="canonical" href="https://olimpyarts.netlify.app/" />
+  <link rel="icon" type="image/png" href="/assets/olimpy-arts-logo.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:site_name" content="Olimpy Arts" />
+  <meta property="og:title" content="Olimpy Arts — Design Gráfico, Thumbnails e Sites" />
+  <meta property="og:description" content="Design para criadores, streamers e marcas: thumbnails, identidade visual, artes para redes sociais e sites." />
+  <meta property="og:url" content="https://olimpyarts.netlify.app/" />
+  <meta property="og:image" content="https://olimpyarts.netlify.app/assets/olimpy-arts-logo.png" />
+  <meta property="og:image:alt" content="Logotipo da Olimpy Arts" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Olimpy Arts","url":"https://olimpyarts.netlify.app/","logo":"https://olimpyarts.netlify.app/assets/olimpy-arts-logo.png","description":"Estúdio de design gráfico para criadores, streamers, marcas e lojas. Thumbnails, banners, identidade visual, social media e sites.","sameAs":["https://www.instagram.com/gcleandroo/","https://www.instagram.com/usantoos/"]}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root{--bg:#0b0b0a;--panel:#11110f;--panel2:#171713;--gold:#c8a35c;--gold2:#e2c27f;--text:#f5f1e8;--muted:#a9a49a;--line:#29271f;--serif:Georgia,serif}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:"DM Sans",Arial,sans-serif;line-height:1.55}a{color:inherit;text-decoration:none}button{font:inherit}.wrap{width:min(1160px,calc(100% - 44px));margin:auto}.topline{height:3px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+    header{position:sticky;top:0;z-index:5;background:rgba(11,11,10,.92);backdrop-filter:blur(14px);border-bottom:1px solid rgba(200,163,92,.14)}.nav{height:78px;display:flex;align-items:center;justify-content:space-between;gap:28px}.brand{display:flex;align-items:center;gap:11px;min-width:max-content}.mark{width:39px;height:39px;border:1px solid var(--gold);display:grid;place-items:center;color:var(--gold2);font:26px/1 "Bebas Neue",sans-serif;transform:rotate(45deg)}.mark span{transform:rotate(-45deg)}.brandname{font:23px/1 "Bebas Neue",sans-serif;letter-spacing:2px}.brandname small{display:block;margin-top:5px;color:var(--gold);font:8px/1 "DM Sans",sans-serif;letter-spacing:3.5px}.navlinks{display:flex;gap:31px;color:#d1ccc1;font-size:12px;letter-spacing:.05em}.navlinks a:hover{color:var(--gold2)}.navtools{display:flex;gap:12px;align-items:center}.iconbtn{position:relative;width:41px;height:41px;border:1px solid var(--line);background:transparent;color:var(--text);border-radius:50%;display:grid;place-items:center;cursor:pointer}.iconbtn:hover{border-color:var(--gold);color:var(--gold2)}.badge{position:absolute;right:-3px;top:-4px;background:var(--gold);color:#16130c;border-radius:50%;min-width:17px;height:17px;padding:0 4px;display:grid;place-items:center;font-size:10px;font-weight:700}.cta{display:inline-flex;justify-content:center;align-items:center;gap:10px;border:1px solid var(--gold);background:var(--gold);color:#17130b;padding:13px 21px;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;transition:.2s;cursor:pointer}.cta:hover{background:var(--gold2);border-color:var(--gold2);transform:translateY(-1px)}.cta.outline{background:transparent;color:var(--gold2)}.cta.outline:hover{background:var(--gold);color:#17130b}
+    .hero{position:relative;overflow:hidden;min-height:550px;display:flex;align-items:center;border-bottom:1px solid var(--line);background:radial-gradient(ellipse at 75% 45%,rgba(200,163,92,.11),transparent 38%),linear-gradient(110deg,#0b0b0a 30%,#11100d 100%)}.hero:after{content:"OA";position:absolute;right:7%;top:50%;transform:translateY(-50%);font:clamp(230px,33vw,460px)/.8 "Bebas Neue",sans-serif;color:rgba(200,163,92,.035);letter-spacing:-.07em;pointer-events:none}.hero-inner{position:relative;z-index:1;max-width:650px;padding:87px 0 91px}.eyebrow{color:var(--gold2);text-transform:uppercase;font-size:10px;font-weight:700;letter-spacing:.27em;display:flex;align-items:center;gap:12px}.eyebrow:before{content:"";width:28px;height:1px;background:var(--gold)}h1,h2,h3,p{margin-top:0}h1{font:clamp(62px,8vw,100px)/.87 "Bebas Neue",sans-serif;letter-spacing:.015em;margin:25px 0 23px;max-width:620px}h1 em{font-style:normal;color:var(--gold2)}.hero p{max-width:430px;color:#b8b2a7;font-size:14px;line-height:1.8;margin-bottom:28px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap}.proof{display:flex;align-items:center;gap:11px;margin-top:38px;color:#8c877d;font-size:10px;letter-spacing:.08em;text-transform:uppercase}.proof:before{content:"";width:6px;height:6px;background:var(--gold);border-radius:50%;box-shadow:0 0 12px #c8a35c}
+    .section{padding:84px 0}.sectionhead{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:31px}.sectionhead h2{font:clamp(42px,5vw,57px)/.95 "Bebas Neue",sans-serif;letter-spacing:.03em;margin:11px 0 0}.sectionhead p{max-width:390px;color:var(--muted);font-size:12px;margin:0}.products{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.product{position:relative;background:linear-gradient(145deg,#151512,#10100e);border:1px solid var(--line);padding:25px 24px 23px;min-height:245px;display:flex;flex-direction:column;transition:.25s}.product:hover{border-color:#80683d;transform:translateY(-3px)}.product-icon{width:42px;height:42px;display:grid;place-items:center;border:1px solid rgba(200,163,92,.35);color:var(--gold2);margin-bottom:24px}.product .num{position:absolute;right:22px;top:23px;color:#615b4e;font:22px "Bebas Neue",sans-serif}.product h3{font:27px/1.05 "Bebas Neue",sans-serif;letter-spacing:.04em;margin:0 0 9px}.product p{color:var(--muted);font-size:12px;line-height:1.7;margin:0 0 20px}.product-foot{margin-top:auto;display:flex;justify-content:space-between;align-items:center;gap:10px}.consult{font-size:10px;letter-spacing:.12em;color:var(--gold2);text-transform:uppercase}.add{border:0;background:transparent;color:var(--gold2);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;cursor:pointer;padding:8px 0}.add:hover{color:white}.add span{font-size:17px;vertical-align:-1px;margin-left:5px}
+    .about{background:#10100e;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.aboutgrid{display:grid;grid-template-columns:.8fr 1.2fr;gap:80px;align-items:center}.about-logo{min-height:300px;border:1px solid #393224;background:radial-gradient(circle at center,rgba(200,163,92,.12),transparent 57%),#0b0b0a;display:grid;place-items:center;text-align:center}.bigmark{font:100px/.75 "Bebas Neue",sans-serif;color:var(--gold);letter-spacing:-.06em}.about-logo p{margin:20px 0 0;color:#b6a170;text-transform:uppercase;letter-spacing:.32em;font-size:9px}.aboutcopy h2{font:clamp(42px,5vw,59px)/.95 "Bebas Neue",sans-serif;margin:12px 0 17px}.aboutcopy>p{color:var(--muted);font-size:13px;line-height:1.9;max-width:570px}.values{display:grid;grid-template-columns:repeat(2,1fr);gap:14px 28px;margin-top:26px}.value{border-top:1px solid var(--line);padding-top:12px;color:#e8e2d7;font-size:11px}.value b{display:block;color:var(--gold2);font:20px "Bebas Neue",sans-serif;letter-spacing:.06em;margin-bottom:4px}
+    .contact{padding:76px 0}.contactbox{border:1px solid #5d4b2c;background:linear-gradient(115deg,rgba(200,163,92,.13),transparent 68%),#11110f;padding:38px 42px;display:flex;justify-content:space-between;align-items:center;gap:26px}.contactbox h2{font:clamp(35px,4vw,48px)/.95 "Bebas Neue",sans-serif;margin:0 0 9px}.contactbox p{margin:0;color:var(--muted);font-size:12px}.contactactions{display:flex;gap:11px;flex-wrap:wrap}.social{display:inline-flex;align-items:center;gap:9px}.social svg{width:17px;height:17px}
+    footer{border-top:1px solid var(--line);padding:25px 0;color:#777268;font-size:10px}.foot{display:flex;justify-content:space-between;align-items:center;gap:20px}.footbrand{color:#c6b994;letter-spacing:.12em;text-transform:uppercase}.footlinks{display:flex;gap:18px}.footlinks a:hover{color:var(--gold2)}
+    .overlay{position:fixed;inset:0;background:rgba(0,0,0,.64);z-index:10;opacity:0;visibility:hidden;transition:.22s}.overlay.open{opacity:1;visibility:visible}.drawer{position:absolute;right:0;top:0;height:100%;width:min(430px,100%);background:#10100e;border-left:1px solid #403521;padding:27px;transform:translateX(100%);transition:.25s;display:flex;flex-direction:column}.overlay.open .drawer{transform:translateX(0)}.drawerhead{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);padding-bottom:17px}.drawerhead h2{font:33px "Bebas Neue",sans-serif;margin:0}.close{background:none;color:var(--text);border:0;font-size:26px;cursor:pointer}.cartitems{overflow:auto;flex:1;padding:15px 0}.empty{color:var(--muted);font-size:13px;text-align:center;padding:50px 8px}.cartrow{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:14px 0;border-bottom:1px solid var(--line)}.cartrow b{display:block;font:21px "Bebas Neue",sans-serif;letter-spacing:.04em}.cartrow small{color:var(--muted);font-size:10px}.qty{display:flex;align-items:center;gap:8px}.qty button{width:26px;height:26px;color:var(--gold2);border:1px solid var(--line);background:transparent;cursor:pointer}.cartbottom{border-top:1px solid var(--line);padding-top:18px}.cartbottom p{font-size:11px;color:var(--muted);margin-bottom:14px}.cartbottom .cta{width:100%}.toast{position:fixed;bottom:20px;left:50%;z-index:12;transform:translate(-50%,20px);opacity:0;background:#e2c27f;color:#15120a;padding:11px 17px;font-size:11px;font-weight:700;transition:.2s;pointer-events:none}.toast.show{opacity:1;transform:translate(-50%,0)}
+    @media(max-width:760px){.nav{height:68px}.navlinks{display:none}.nav .cta{display:none}.hero{min-height:500px}.hero-inner{padding:68px 0}.hero:after{right:-3%;top:61%;font-size:260px}.section{padding:65px 0}.sectionhead{display:block}.sectionhead p{margin-top:13px}.products{grid-template-columns:1fr}.product{min-height:220px}.aboutgrid{grid-template-columns:1fr;gap:35px}.about-logo{min-height:230px}.contactbox{align-items:flex-start;flex-direction:column;padding:28px 23px}.foot{align-items:flex-start;flex-direction:column}.footlinks{flex-wrap:wrap}.values{gap:12px}}
+    @media(max-width:420px){.wrap{width:calc(100% - 32px)}.hero-actions .cta{width:100%}.sectionhead h2{font-size:32px}.contactactions{width:100%}.contactactions .cta{width:100%}}
+    /* Refinamentos da identidade visual */
+    h2,h3{font-family:Helvetica,Arial,sans-serif!important;font-weight:700;letter-spacing:.015em;line-height:1.12!important}
+    h2{font-size:clamp(28px,3.3vw,38px)!important}
+    h3{font-size:19px!important}
+    .hero{background:#0b0b0a}
+    .hero:after,.proof:before{display:none}
+    .proof{margin-top:28px}
+    .brand{gap:0}
+    .brand img{display:block;width:68px;height:68px;object-fit:cover;border-radius:50%}
+    .brandname,.mark{display:none}
+    .product{min-height:365px;height:100%;background:#11110f;transition:border-color .2s}
+    .product:hover{transform:none}
+    .product-icon{margin-bottom:18px}
+    .product p{min-height:72px}
+    .price{display:block;color:var(--gold2);font-size:18px;font-weight:700;letter-spacing:.02em;margin-top:12px}
+    .price small{display:block;color:#8e887c;font-size:9px;line-height:1.4;letter-spacing:.1em;text-transform:uppercase;font-weight:500;margin-top:3px}
+    .product-foot{min-height:42px}
+    .consult{font-size:9px;letter-spacing:.08em}
+    .add{font-size:10px;white-space:nowrap}
+    .add span{display:none}
+    .about-logo{background:#0b0b0a}
+    .about-logo img{display:block;width:min(250px,78%);aspect-ratio:1;object-fit:contain;border-radius:50%}
+    .about-logo>div{display:contents}
+    .about-logo p,.bigmark{display:none}
+    .contactbox{background:#11110f}
+    .contactactions .cta{min-width:190px;min-height:48px}
+    .contactactions svg,.cartbottom svg{width:18px;height:18px;flex:none}
+    .contactactions .whatsapp-icon,.cartbottom .whatsapp-icon{color:#25d366}
+    .footbrand{display:inline-flex;align-items:center;gap:8px;letter-spacing:0}
+    .footbrand img{width:34px;height:34px;object-fit:cover;border-radius:50%}
+    .cartrow b{font:600 15px/1.3 Helvetica,Arial,sans-serif;letter-spacing:0}
+    .cartrow small{display:block;margin-top:5px}
+    .cartprice{font-size:12px;color:var(--gold2);margin:14px 0}
+    .cartprice strong{font-size:16px}
+    .service-group{margin-top:48px}.service-group:first-of-type{margin-top:0}.service-group-head{margin-bottom:17px}.service-group-head h3{font:700 17px/1.3 Helvetica,Arial,sans-serif;letter-spacing:.06em;text-transform:uppercase;margin:0 0 7px}.service-group-head p{max-width:760px;color:var(--muted);font-size:12px;margin:0}.product{min-height:430px;height:100%;background:#11110f;transition:border-color .2s}.product:hover{transform:none}.product p{min-height:0}.product .includes{font-size:11px;line-height:1.65;color:#d3cfc5;border-top:1px solid var(--line);padding-top:11px;margin-bottom:12px}.product .price{margin-top:auto;padding-top:8px}.person{min-height:170px;border:1px solid var(--line);background:#11110f;padding:24px;display:flex;flex-direction:column;justify-content:center}.person h3{font:700 19px Helvetica,Arial,sans-serif;margin:0 0 13px}.person a{width:fit-content;color:#e6d4aa;font-size:12px;margin:4px 0;display:flex;align-items:center;gap:8px}.person .whatsapp-icon{width:16px;height:16px;color:#25d366;flex:none}.person a:hover{color:#fff}.contact-note{color:var(--muted);font-size:11px;margin:16px 0 0}.people{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:25px}@media(max-width:900px){.products{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:760px){.products,.people{grid-template-columns:1fr}.product{min-height:395px}}
+
+    .hero .wrap.hero-layout{display:grid;grid-template-columns:minmax(0,1.12fr) minmax(270px,.88fr);align-items:center;gap:48px;max-width:1160px}
+    .hero{min-height:640px;background:radial-gradient(ellipse at 78% 50%,rgba(200,163,92,.10),transparent 32%),#0b0b0a}
+    .hero-inner{max-width:650px;padding:58px 0}
+    .phone-shell{justify-self:center;position:relative;width:290px;aspect-ratio:290/596;padding:14px 13px;border:2px solid #655333;border-radius:42px;background:linear-gradient(145deg,#28251e,#070707 38%,#191814);box-shadow:0 25px 65px rgba(0,0,0,.55),inset 0 0 0 2px #080807}
+    .phone-screen{position:absolute;inset:14px 13px;overflow:hidden;border-radius:29px;background:#0c1015}
+    .phone-screen img{display:block;width:100%;height:100%;object-fit:fill}
+    .hide-followed-row{position:absolute;left:0;right:0;top:35.45%;height:5.05%;background:#0c1015}
+    .phone-speaker{position:absolute;z-index:1;top:9px;left:50%;transform:translateX(-50%);width:62px;height:7px;border-radius:8px;background:#030303;border:1px solid #39362f}
+    .phone-camera{position:absolute;z-index:1;top:8px;left:calc(50% + 42px);width:8px;height:8px;border-radius:50%;background:#171b20;border:1px solid #403d36}
+    .product-icon{display:block;width:78px;height:78px;border:1px solid rgba(200,163,92,.52);overflow:hidden;border-radius:2px;background:#0a0a09;margin-bottom:17px}
+    .product-icon img{display:block;width:100%;height:100%;object-fit:cover}
+    .product{min-height:440px}
+    @media(max-width:760px){.hero{min-height:auto}.hero .wrap.hero-layout{grid-template-columns:1fr;gap:3px}.hero-inner{padding:62px 0 24px}.phone-shell{width:252px;margin:8px auto 49px}.product-icon{width:78px;height:78px}}
+    @media(min-width:761px) and (max-width:980px){.hero .wrap.hero-layout{gap:22px;grid-template-columns:minmax(0,1.15fr) minmax(230px,.85fr)}.phone-shell{width:250px}}
+  </style>
+</head>
 <body>
-<canvas aria-hidden="true" id="particleCanvas"></canvas>
-<div aria-hidden="true" class="grid-bg"></div>
-<div aria-hidden="true" class="gold-orb" id="goldOrb"></div>
-<div aria-hidden="true" class="trail-layer" id="trailLayer"></div>
-<div aria-hidden="true" class="noise"></div>
-
-<div class="experience-gate" id="experienceGate">
-<div class="gate-shell"><div class="gate-brand"><img alt="Logo Olimpy Arts" src="olimpy-logo.png"/><strong>OLIMPY ARTS</strong></div><h1>Seu negócio já tem valor.<br/><em>Vamos fazer o digital mostrar isso.</em></h1><p>Sites, identidade visual, conteúdo, edição e materiais para criadores e empresas — tudo pensado para deixar sua presença mais clara, profissional e pronta para vender.</p><button class="btn btn-gold magnetic" id="enterExperience">Conhecer a Olimpy <span>↗</span></button><small>Entre, explore os serviços e veja como a Olimpy organiza a sua presença para vender melhor.</small></div>
-</div>
-<header class="header" id="header">
-<nav class="nav-shell">
-<a aria-label="Olimpy Arts" class="brand" href="#inicio"><span class="brand-logo-wrap"><img alt="Olimpy Arts" src="olimpy-logo.png"/></span><span class="brand-name">OLIMPY <b>ARTS</b></span></a>
-<button aria-expanded="false" aria-label="Abrir menu" class="menu-toggle" id="menuToggle">
-<span></span><span></span>
-</button>
-<div class="nav-links" id="navLinks">
-<a href="#visao">Por que Olimpy</a>
-<a href="#caminhos">Soluções</a>
-<a href="#nossos-servicos">Serviços &amp; preços</a>
-<a href="#sites">Sites</a>
-<a href="#metodo">Como trabalhamos</a>
-<a class="nav-contact" href="#contato">Pedir orçamento</a>
-</div>
-</nav>
-<div aria-hidden="true" class="nav-progress"><i id="navProgressBar"></i></div></header>
-<main>
-<section class="hero section" id="inicio">
-<div class="hero-copy reveal">
-<div class="hero-topline"><div class="hero-service-line">Sites  •  Social Media  •  Thumbnails  •  Edição  •  Stream Pack</div></div>
-<h1>Não vendemos<br/>“arte bonita”.<br/><em>Mudamos o jogo.</em></h1>
-<p class="hero-lead">A <strong>Olimpy Arts</strong> organiza a imagem da sua marca, o jeito como ela se apresenta e o caminho que leva o visitante até o pedido. Sem enfeite solto: cada peça precisa ter função.</p>
-<div class="hero-actions">
-<a class="btn btn-gold magnetic" href="#contato">Quero elevar minha marca <span>↗</span></a>
-<a class="btn btn-dark magnetic" href="#showcase">Ver a experiência <span>↓</span></a>
-</div>
-<div class="hero-service-pills"><a href="#sites-business"><b>Sites</b><span>Estrutura clara para apresentar e vender</span></a><a href="#creator-services"><b>Conteúdo</b><span>Thumbnails, edição e materiais para creators</span></a><a href="#essencia"><b>Identidade</b><span>Visual consistente em todos os pontos de contato</span></a><a href="#contato"><b>Sob medida</b><span>Conte sua ideia e a equipe avalia com você</span></a></div>
-</div>
-<div class="hero-media reveal" data-delay="120">
-<div class="hero-image-wrap tilt-card" data-tilt="">
-<img alt="Profissional anônimo movendo uma peça de xadrez em ambiente corporativo premium" src="hero-strategy.png"/>
-<div class="image-vignette"></div>
-<div class="scanline"></div>
-<div class="floating-token token-a"><b>SITES</b><span>PÁGINAS QUE EXPLICAM E CONVERTEM</span></div>
-<div class="floating-token token-b"><b>CONTEÚDO</b><span>THUMBNAIL + EDIÇÃO</span></div>
-<div class="floating-token token-c"><b>STREAM</b><span>IDENTIDADE PARA SUA LIVE</span></div>
-</div>
-
-</div>
-
-</section>
-<section aria-label="Serviços Olimpy Arts" class="marquee-strip"><div class="marquee-track"><div class="marquee-group"><span>SITES</span><i>✦</i><span>SOCIAL MEDIA</span><i>✦</i><span>THUMBNAILS</span><i>✦</i><span>EDIÇÃO DE VÍDEO</span><i>✦</i><span>STREAM PACK</span><i>✦</i><span>DIREÇÃO VISUAL</span><i>✦</i><span>CONVERSÃO</span><i>✦</i><span>POSICIONAMENTO</span><i>✦</i></div><div aria-hidden="true" class="marquee-group"><span>SITES</span><i>✦</i><span>SOCIAL MEDIA</span><i>✦</i><span>THUMBNAILS</span><i>✦</i><span>EDIÇÃO DE VÍDEO</span><i>✦</i><span>STREAM PACK</span><i>✦</i><span>DIREÇÃO VISUAL</span><i>✦</i><span>CONVERSÃO</span><i>✦</i><span>POSICIONAMENTO</span><i>✦</i></div></div></section>
-<section class="section vision" id="visao">
-<div class="section-index reveal">POR QUE A IMAGEM IMPORTA</div>
-<div class="vision-grid">
-<div class="reveal">
-<span class="eyebrow">A PRIMEIRA VENDA ACONTECE NA PERCEPÇÃO</span>
-<h2 class="display">
-            Seu cliente vê sua marca<br/>
-<em>antes de conhecer sua empresa.</em>
-</h2>
-</div>
-<div class="vision-copy reveal" data-delay="100">
-<p>
-            Ele abre seu Instagram. Pesquisa no Google. Visita seu site. Olha as fotos.
-            Compara com a concorrência. E em poucos segundos decide se sua empresa parece
-            confiável, profissional e desejável.
-          </p>
-<p>
-            É por isso que a Olimpy não trata design como decoração. Nós tratamos imagem,
-            site e conteúdo como parte da estratégia comercial.
-          </p>
-</div>
-</div>
-<div class="belief-board reveal">
-<div class="belief muted">“POSTAR MAIS” NÃO É ESTRATÉGIA.</div>
-<div class="belief gold">SER LEMBRADO É.</div>
-</div>
-</section>
-<section class="section transformation" id="showcase">
-<div class="section-index reveal">ANTES E DEPOIS DE UMA ESTRATÉGIA</div>
-<div class="transform-head">
-<h2 class="display reveal">A empresa pode ser boa.<br/><em>O digital precisa provar isso.</em></h2>
-<p class="reveal">A comparação abaixo é uma simulação visual do tipo de mudança que estruturamos: menos improviso, mais clareza de oferta, confiança e caminho para o cliente comprar ou pedir orçamento.</p>
-</div>
-<div class="before-after concrete-compare">
-<article class="ba-card ba-before reveal tilt-card" data-tilt="">
-<span class="ba-label">ANTES / PRESENÇA SEM PLANEJAMENTO</span>
-<div aria-label="Exemplo ilustrativo de site fraco para vendas" class="business-scene scene-before scene-visual">
-<img alt="Exemplo ilustrativo de site fraco para vendas" src="showcase-site-before.png"/>
-</div>
-<h3>O cliente precisa <br/>“descobrir sozinho” o valor.</h3>
-<ul>
-<li>site sem hierarquia ou sem objetivo comercial</li>
-<li>conteúdo bonito, mas sem mensagem e sem CTA</li>
-<li>serviços e diferenciais difíceis de entender</li>
-<li>WhatsApp recebendo perguntas que o site deveria responder</li>
-</ul>
-</article>
-<article class="ba-card ba-after reveal tilt-card" data-delay="120" data-tilt="">
-<span class="ba-label">DEPOIS / ESTRUTURA OLIMPY</span>
-<div aria-label="Exemplo ilustrativo de site estruturado para conversão" class="business-scene scene-after scene-visual">
-<img alt="Exemplo ilustrativo de site estruturado para conversão" src="showcase-site-after.png"/>
-</div>
-<h3>O cliente entende<br/><em>por que escolher você.</em></h3>
-<ul>
-<li>proposta de valor visível nos primeiros segundos</li>
-<li>site e redes seguindo a mesma direção visual</li>
-<li>serviços organizados por intenção de compra</li>
-<li>caminhos claros para orçamento, pedido e fechamento</li>
-</ul>
-</article>
-</div>
-<p class="concept-note reveal">* Comparativo conceitual de estratégia e apresentação; não representa resultado financeiro garantido nem “antes/depois” de um cliente específico.</p>
-</section>
-<section class="section service-router" id="caminhos">
-<div class="section-index reveal">ESCOLHA O QUE VOCÊ PRECISA</div>
-<div class="router-head reveal">
-<span class="eyebrow">VÁ DIRETO AO QUE VOCÊ PRECISA</span>
-<h2 class="display">O que você quer<br/><em>construir agora?</em></h2>
-<p>Escolha seu objetivo e vá direto para os serviços que fazem sentido. O carrinho permite combinar itens diferentes no mesmo pedido.</p>
-</div>
-<div class="router-grid">
-<a class="route-card route-site reveal tilt-card" data-tilt="" href="#sites-business">
-<span class="route-code">PARA EMPRESAS</span>
-<div aria-hidden="true" class="route-icon">↗</div>
-<h3>Quero um site que apresente e venda melhor.</h3>
-<p>Para negócios que precisam sair do improviso: site institucional, catálogo, pedidos, agendamento, páginas comerciais e estrutura premium.</p>
-<div class="route-tags"><span>SITES</span><span>LANDING</span><span>COMMERCE</span></div>
-<strong>Ver soluções para empresas →</strong>
-</a>
-<a class="route-card route-creator reveal tilt-card" data-delay="80" data-tilt="" href="#creator-services">
-<span class="route-code">PARA CRIADORES E STREAMERS</span>
-<div aria-hidden="true" class="route-icon">▶</div>
-<h3>Quero conteúdo que pare o scroll e pareça profissional.</h3>
-<p>Thumbnail, edição de vídeo e Stream Pack reunidos em uma área própria para YouTube, Reels, Shorts, lives e criadores.</p>
-<div class="route-tags"><span>THUMB</span><span>EDIÇÃO</span><span>STREAM PACK</span></div>
-<strong>Ver soluções para criadores →</strong>
-</a>
-<a class="route-card route-custom reveal tilt-card" data-delay="160" data-tilt="" href="#contato">
-<span class="route-code">PROJETO SOB MEDIDA</span>
-<div aria-hidden="true" class="route-icon">✦</div>
-<h3>Tenho uma ideia específica. Vocês conseguem fazer?</h3>
-<p>Explique o que está imaginando. A equipe recebe seu briefing no WhatsApp e responde se o projeto é viável, como funcionaria e o próximo passo.</p>
-<div class="route-tags"><span>PERSONALIZADO</span><span>BRIEFING</span></div>
-<strong>Falar sobre meu pedido →</strong>
-</a>
-</div>
-</section>
-<section class="section services" id="essencia">
-<div class="section-index reveal">COMO A OLIMPY PENSA</div>
-<div class="services-head">
-<h2 class="display reveal">A estética chama atenção.<br/><em>A estratégia faz a marca ficar.</em></h2>
-<p class="reveal">Nossa essência é transformar uma empresa boa em uma marca percebida como profissional, coerente e desejável — sem design solto e sem presença digital improvisada.</p>
-</div>
-<div class="service-stack essence-stack">
-<article class="service-panel reveal">
-<span class="service-number">01</span>
-<div><h3>Estratégia antes da arte</h3><p>Antes de criar, entendemos o negócio, o público, a oferta e o que a marca precisa comunicar em poucos segundos.</p></div>
-<div class="service-chip">ESTRATÉGIA</div>
-</article>
-<article class="service-panel reveal">
-<span class="service-number">02</span>
-<div><h3>Percepção de valor</h3><p>Organizamos visual, linguagem e experiência para a empresa transmitir mais confiança antes mesmo do primeiro contato.</p></div>
-<div class="service-chip">PERCEPÇÃO</div>
-</article>
-<article class="service-panel reveal">
-<span class="service-number">03</span>
-<div><h3>Presença que conversa</h3><p>Site, redes, campanhas e peças visuais seguem a mesma direção para que a marca pareça uma só em todos os pontos de contato.</p></div>
-<div class="service-chip">PRESENÇA</div>
-</article>
-<article class="service-panel reveal">
-<span class="service-number">04</span>
-<div><h3>Design com objetivo</h3><p>Cada escolha visual precisa ajudar o cliente a entender, desejar, confiar e avançar para o próximo passo.</p></div>
-<div class="service-chip">CONVERSÃO</div>
-</article>
-<article class="service-panel reveal">
-<span class="service-number">05</span>
-<div><h3>Evolução contínua</h3><p>Uma marca viva precisa acompanhar campanhas, novos produtos e mudanças de posicionamento sem perder identidade.</p></div>
-<div class="service-chip">EVOLUÇÃO</div>
-</article>
-</div>
-</section>
-<section class="section shop-services" id="nossos-servicos">
-<div class="section-index reveal">SERVIÇOS E VALORES</div>
-<div class="shop-heading">
-<div>
-<span class="eyebrow reveal">PREÇOS CLAROS · COMBINE COMO QUISER</span>
-<h2 class="display reveal">Escolha por objetivo.<br/><em>Não por uma lista genérica.</em></h2>
-<p class="shop-intro reveal">Sites ficam separados de criação para YouTube e streaming. Você pode misturar serviços no carrinho e simular Pix, débito ou crédito antes de chamar a equipe.</p>
-</div>
-<button class="shop-cart-hero magnetic" id="openCartHero" type="button">
-<span aria-hidden="true" class="cart-icon">🛒</span>
-<span><small>SEU PACOTE</small><strong><span id="heroCartCount">0</span> item(ns)</strong></span>
-<b id="heroCartTotal">R$ 0,00</b>
-</button>
-</div>
-<div aria-label="Formas de pagamento e simulação" class="payment-trust reveal">
-<div class="pay-badge pix-badge"><span aria-hidden="true" class="pix-mark">◆</span><b>PIX</b></div>
-<div class="pay-badge visa-badge"><b>VISA</b></div>
-<div class="pay-copy"><strong>Pix, débito e crédito</strong><span>Crédito com simulação em até 12x. Acréscimos aparecem no carrinho antes do envio do pedido.</span></div>
-</div>
-<div class="service-category reveal" id="sites-business">
-<div><span>01</span><strong>SITES &amp; ESTRUTURA PARA EMPRESAS</strong></div>
-<p>Para apresentar sua empresa, organizar a oferta e transformar visitas em pedidos, agendamentos ou contatos qualificados.</p>
-</div>
-<div class="shop-grid" id="serviceShopGrid">
-<article class="shop-card reveal featured-service" data-product-cycle="único" data-product-id="presence" data-product-name="Olimpy Presence" data-product-price="250">
-<div class="shop-card-top"><span class="shop-code">01 / PRESENCE</span><span class="shop-tag">SITE</span></div>
-<h3>Olimpy Presence</h3><p>Vitrine digital para quem precisa apresentar a empresa com confiança, explicar o que vende e levar o visitante ao contato.</p>
-<ul><li>site institucional responsivo</li><li>organização de serviços e diferenciais</li><li>CTAs para WhatsApp / orçamento</li><li>seções comerciais e prova de confiança</li></ul>
-<div class="shop-card-bottom"><div class="shop-price"><small>Pix / à vista</small><strong>R$ 250</strong><span class="card-installment" data-price="250">simulando 12x…</span></div><button class="add-cart-btn magnetic" type="button">Adicionar <span>+</span></button></div>
-<div class="shop-mini-pay"><span>◆ PIX</span><span>VISA</span><span>ATÉ 12X</span></div>
-</article>
-<article class="shop-card reveal" data-product-cycle="único" data-product-id="commerce" data-product-name="Olimpy Commerce" data-product-price="500">
-<div class="shop-card-top"><span class="shop-code">02 / COMMERCE</span><span class="shop-tag">SITE + VENDA</span></div>
-<h3>Olimpy Commerce</h3><p>Para negócios que precisam usar o site como parte da operação: catálogo, pedidos, agendamento e caminhos de conversão.</p>
-<ul><li>site completo</li><li>catálogo, agenda ou pedidos</li><li>fluxos de retirada / entrega quando aplicável</li><li>estrutura comercial e CTAs</li></ul>
-<div class="shop-card-bottom"><div class="shop-price"><small>Pix / à vista</small><strong>R$ 500</strong><span class="card-installment" data-price="500">simulando 12x…</span></div><button class="add-cart-btn magnetic" type="button">Adicionar <span>+</span></button></div>
-<div class="shop-mini-pay"><span>◆ PIX</span><span>VISA</span><span>ATÉ 12X</span></div>
-</article>
-<article class="shop-card reveal featured-service" data-product-cycle="único" data-product-id="dominion" data-product-name="Olimpy Dominion" data-product-price="990">
-<div class="shop-ribbon">PROJETO COMPLETO</div>
-<div class="shop-card-top"><span class="shop-code">03 / DOMINION</span><span class="shop-tag">PREMIUM</span></div>
-<h3>Olimpy Dominion</h3><p>Projeto mais amplo para alinhar site, direção visual e comunicação, deixando a presença digital com uma linguagem única.</p>
-<ul><li>site completo incluso</li><li>direção visual</li><li>planejamento de conteúdo</li><li>acompanhamento estratégico inicial</li></ul>
-<div class="shop-card-bottom"><div class="shop-price"><small>Pix / à vista</small><strong>R$ 990</strong><span class="card-installment" data-price="990">simulando 12x…</span></div><button class="add-cart-btn magnetic" type="button">Adicionar <span>+</span></button></div>
-<div class="shop-mini-pay"><span>◆ PIX</span><span>VISA</span><span>ATÉ 12X</span></div>
-</article>
-</div>
-<div class="service-category reveal" id="creator-services">
-<div><span>02</span><strong>YOUTUBE · VÍDEO · STREAMING</strong></div>
-<p>Para criadores que precisam de identidade e edição sem contratar um pacote empresarial inteiro.</p>
-</div>
-<div class="shop-grid creator-grid">
-<article class="shop-card reveal creator-card" data-product-cycle="unidade" data-product-id="thumbnail" data-product-name="Thumbnail Profissional" data-product-price="25">
-<div class="shop-card-top"><span class="shop-code">04 / THUMBNAIL</span><span class="shop-tag">YOUTUBE</span></div>
-<h3>Thumbnail Profissional</h3><p>Capa criada para comunicar o tema do vídeo rápido, destacar o assunto e deixar o canal visualmente mais forte.</p>
-<ul><li>composição personalizada</li><li>tipografia de impacto</li><li>tratamento visual</li><li>1 thumbnail por unidade</li></ul>
-<div class="shop-card-bottom"><div class="shop-price"><small>por unidade</small><strong>R$ 25</strong><span class="card-installment" data-price="25">simulando 12x…</span></div><button class="add-cart-btn magnetic" type="button">Adicionar <span>+</span></button></div>
-<div class="shop-mini-pay"><span>◆ PIX</span><span>VISA</span><span>ATÉ 12X</span></div>
-</article>
-<article class="shop-card reveal creator-card" data-product-cycle="unidade" data-product-id="video-basic" data-product-name="Edição de Vídeo — Básica" data-product-price="45">
-<div class="shop-card-top"><span class="shop-code">05 / EDIÇÃO BÁSICA</span><span class="shop-tag">VÍDEO</span></div>
-<h3>Edição Básica</h3><p>Limpeza e montagem direta para conteúdo que precisa ficar organizado e pronto para publicar.</p>
-<ul><li>cortes e ritmo básico</li><li>ajustes simples de áudio</li><li>texto/título pontual</li><li>exportação para a plataforma combinada</li></ul>
-<div class="shop-card-bottom"><div class="shop-price"><small>por edição</small><strong>R$ 45</strong><span class="card-installment" data-price="45">simulando 12x…</span></div><button class="add-cart-btn magnetic" type="button">Adicionar <span>+</span></button></div>
-<div class="shop-mini-pay"><span>◆ PIX</span><span>VISA</span><span>ATÉ 12X</span></div>
-</article>
-<article class="shop-card reveal creator-card" data-product-cycle="unidade" data-product-id="video-intermediate" data-product-name="Edição de Vídeo — Intermediária" data-product-price="70">
-<div class="shop-card-top"><span class="shop-code">06 / EDIÇÃO INTERMEDIÁRIA</span><span class="shop-tag">VÍDEO</span></div>
-<h3>Edição Intermediária</h3><p>Para vídeos que pedem mais dinâmica visual, melhor ritmo e acabamento acima do corte simples.</p>
-<ul><li>cortes dinâmicos</li><li>legendas/elementos pontuais</li><li>transições e zooms quando fizer sentido</li><li>tratamento de áudio e ritmo</li></ul>
-<div class="shop-card-bottom"><div class="shop-price"><small>por edição</small><strong>R$ 70</strong><span class="card-installment" data-price="70">simulando 12x…</span></div><button class="add-cart-btn magnetic" type="button">Adicionar <span>+</span></button></div>
-<div class="shop-mini-pay"><span>◆ PIX</span><span>VISA</span><span>ATÉ 12X</span></div>
-</article>
-<article class="shop-card reveal featured-service creator-card" data-product-cycle="unidade" data-product-id="video-complete" data-product-name="Edição de Vídeo — Completa" data-product-price="120">
-<div class="shop-card-top"><span class="shop-code">07 / EDIÇÃO COMPLETA</span><span class="shop-tag">PREMIUM</span></div>
-<h3>Edição Completa</h3><p>Acabamento mais trabalhado para conteúdos que precisam segurar atenção e transmitir uma produção mais profissional.</p>
-<ul><li>edição dinâmica completa</li><li>motion/textos e recursos visuais</li><li>tratamento de áudio mais cuidadoso</li><li>finalização pronta para publicação</li></ul>
-<div class="shop-card-bottom"><div class="shop-price"><small>por edição</small><strong>R$ 120</strong><span class="card-installment" data-price="120">simulando 12x…</span></div><button class="add-cart-btn magnetic" type="button">Adicionar <span>+</span></button></div>
-<div class="shop-mini-pay"><span>◆ PIX</span><span>VISA</span><span>ATÉ 12X</span></div>
-</article>
-<article class="shop-card reveal wide-service creator-card" data-product-cycle="único" data-product-id="stream-pack" data-product-name="Stream Pack Completo" data-product-price="200">
-<div class="shop-card-top"><span class="shop-code">08 / STREAM PACK</span><span class="shop-tag">STREAMER</span></div>
-<h3>Stream Pack Completo</h3><p>Identidade visual fechada para sua live deixar de parecer configuração padrão e começar a parecer um canal com marca própria.</p>
-<ul class="two-col-list"><li>cena de início</li><li>intervalo / final</li><li>facecam / overlay</li><li>painéis</li><li>alertas / elementos visuais</li><li>direção visual do pack</li></ul>
-<div class="shop-card-bottom"><div class="shop-price"><small>pacote fechado</small><strong>R$ 200</strong><span class="card-installment" data-price="200">simulando 12x…</span></div><button class="add-cart-btn magnetic" type="button">Adicionar <span>+</span></button></div>
-<div class="shop-mini-pay"><span>◆ PIX</span><span>VISA</span><span>ATÉ 12X</span></div>
-</article>
-</div>
-<div class="service-category reveal">
-<div><span>03</span><strong>GESTÃO &amp; CRESCIMENTO DE MARCA</strong></div>
-<p>Para empresas que querem manter comunicação recorrente e coerente depois da estrutura inicial.</p>
-</div>
-<div class="shop-grid growth-grid">
-<article class="shop-card reveal" data-product-cycle="mensal" data-product-id="social-media" data-product-name="Social Media Essencial" data-product-price="890">
-<div class="shop-card-top"><span class="shop-code">09 / SOCIAL</span><span class="shop-tag">MENSAL</span></div>
-<h3>Social Media Essencial</h3><p>Planejamento e criação para manter a marca organizada, profissional e ativa nas redes.</p>
-<ul><li>calendário editorial</li><li>artes e copies</li><li>direção de conteúdo</li><li>organização visual</li></ul>
-<div class="shop-card-bottom"><div class="shop-price"><small>a partir de</small><strong>R$ 890</strong><span>/ mês · primeiro ciclo no carrinho</span></div><button class="add-cart-btn magnetic" type="button">Adicionar <span>+</span></button></div>
-<div class="shop-mini-pay"><span>◆ PIX</span><span>VISA</span><span>ATÉ 12X</span></div>
-</article>
-<article class="shop-card reveal wide-service" data-product-cycle="mensal" data-product-id="gestao-multicanal" data-product-name="Gestão Multicanal para Lojas" data-product-price="1190">
-<div class="shop-card-top"><span class="shop-code">10 / GESTÃO MULTICANAL</span><span class="shop-tag">LOJAS &amp; EMPRESAS</span></div>
-<h3>Gestão Multicanal para Lojas</h3><p>Organização da comunicação para Instagram, Facebook e Status do WhatsApp, evitando que cada canal pareça uma empresa diferente.</p>
-<ul class="two-col-list"><li>planejamento mensal</li><li>Instagram</li><li>Facebook</li><li>Status do WhatsApp</li><li>artes promocionais</li><li>copies e chamadas</li></ul>
-<div class="shop-card-bottom"><div class="shop-price"><small>a partir de</small><strong>R$ 1.190</strong><span>/ mês · primeiro ciclo no carrinho</span></div><button class="add-cart-btn magnetic" type="button">Adicionar <span>+</span></button></div>
-<div class="shop-mini-pay"><span>◆ PIX</span><span>VISA</span><span>ATÉ 12X</span></div>
-</article>
-</div>
-<div class="custom-request reveal">
-<div class="custom-request-copy">
-<span class="eyebrow">NÃO ACHOU EXATAMENTE O QUE IMAGINOU?</span>
-<h3>Fale conosco e peça seu projeto personalizado.</h3>
-<p>Landing específica, arte avulsa, pacote diferente, identidade para campanha, peça para live ou outra ideia: descreva o que você quer e a equipe responde se conseguimos executar.</p>
-</div>
-<a class="btn btn-gold magnetic" href="#contato">Pedir algo personalizado <span>↗</span></a>
-</div>
-<div class="shop-bottom-cta reveal">
-<div><span class="eyebrow">SEM COBRANÇA DENTRO DO SITE</span><h3>Monte o pacote, simule o pagamento e só então envie o pedido.</h3><p>O site não pede número do cartão, validade ou CVV. A finalização prepara a mensagem e distribui o atendimento entre os dois responsáveis da Olimpy Arts.</p></div>
-<button class="btn btn-gold magnetic" id="openCartBottom" type="button">Ver carrinho <span>↗</span></button>
-</div>
-<p class="rate-reference reveal">* A simulação de parcelamento usa a referência configurada no projeto. Taxas e condições reais devem ser confirmadas no atendimento antes do pagamento.</p>
-</section>
-<section class="section method" id="metodo">
-<div class="section-index reveal">COMO TRABALHAMOS</div>
-<div class="method-grid">
-<div class="method-copy reveal">
-<span class="eyebrow">NOSSO JEITO DE TRABALHAR</span>
-<h2 class="display">Quem domina a imagem,<br/><em>domina a primeira impressão.</em></h2>
-<p>
-            Nosso processo foi desenhado para não começar pelo “que vamos postar?”,
-            e sim por “como essa empresa precisa ser percebida?”.
-          </p>
-</div>
-<div class="method-wheel reveal" id="methodWheel">
-<div class="wheel-ring ring-1"></div>
-<div class="wheel-ring ring-2"></div>
-<div class="wheel-center">
-<b>OLIMPY</b>
-<span>PROCESSO CRIATIVO</span>
-</div>
-<div class="wheel-node node-1">DIAGNÓSTICO</div>
-<div class="wheel-node node-2">POSIÇÃO</div>
-<div class="wheel-node node-3">CRIAÇÃO</div>
-<div class="wheel-node node-4">PUBLICAÇÃO</div>
-<div class="wheel-node node-5">EVOLUÇÃO</div>
-</div>
-</div>
-<div class="process-cards">
-<article class="process-card reveal"><span>01</span><h3>Imersão</h3><p>Entendemos o negócio, público, momento atual e objetivos.</p></article>
-<article class="process-card reveal"><span>02</span><h3>Diagnóstico</h3><p>Encontramos o que enfraquece a percepção da marca.</p></article>
-<article class="process-card reveal"><span>03</span><h3>Direção</h3><p>Definimos o visual e a forma correta de apresentação.</p></article>
-<article class="process-card reveal"><span>04</span><h3>Execução</h3><p>Construímos site, conteúdo e estrutura digital.</p></article>
-<article class="process-card reveal"><span>05</span><h3>Evolução</h3><p>Mantemos tudo atualizado e em movimento.</p></article>
-</div>
-</section>
-<section class="section proof">
-<div class="section-index reveal">O QUE MUDA QUANDO TUDO FALA A MESMA LÍNGUA</div>
-<div class="metrics"><div class="metric reveal benefit-metric"><strong>Clareza</strong><span>O cliente entende mais rápido o que você faz, quanto custa e qual é o próximo passo.</span></div><div class="metric reveal benefit-metric"><strong>Consistência</strong><span>Site, conteúdo e materiais seguem a mesma identidade em vez de parecerem peças desconectadas.</span></div><div class="metric reveal benefit-metric"><strong>Organização</strong><span>O pedido chega no WhatsApp com serviço, forma de pagamento e briefing já estruturados.</span></div><div class="metric reveal benefit-metric"><strong>Evolução</strong><span>A base visual e comercial fica pronta para receber novos produtos, campanhas e conteúdos sem começar do zero.</span></div></div>
-<p class="proof-note reveal">
-        Não prometemos faturamento mágico. Nosso trabalho é construir uma presença mais profissional,
-        confiável e comercialmente preparada para aumentar suas chances de atrair, convencer e converter melhor.
-      </p>
-</section>
-<section class="section pricing" id="sites">
-<div class="section-index reveal">PACOTES DE SITE</div>
-<div class="pricing-head">
-<div>
-<span class="eyebrow reveal">ESCOLHA O TIPO DE SITE</span>
-<h2 class="display reveal">Qual estrutura digital<br/><em>combina com o momento da sua empresa?</em></h2>
-</div>
-<p class="reveal">Os três formatos abaixo organizam o escopo por nível de necessidade: presença institucional, operação comercial e presença digital mais ampla. Você pode combinar o site com edição, thumbnails, stream pack ou gestão no mesmo carrinho.</p>
-</div>
-<div class="pricing-grid">
-<article class="price-card reveal tilt-card" data-tilt="">
-<div class="price-code">01 / PRESENCE</div>
-<h3>Olimpy Presence</h3>
-<div class="price">R$ <strong>250</strong></div>
-<p class="price-desc">Uma vitrine profissional para apresentar sua empresa com muito mais força.</p>
-<ul>
-<li>site institucional</li>
-<li>layout responsivo</li>
-<li>botões de contato</li>
-<li>seções estratégicas</li>
-<li>apresentação premium</li>
-</ul>
-<button class="btn btn-dark site-cart-add magnetic" data-product-id="presence" type="button">Adicionar Presence <span>+</span></button>
-</article>
-<article class="price-card reveal tilt-card" data-delay="80" data-tilt="">
-<div class="price-code">02 / COMMERCE</div>
-<h3>Olimpy Commerce</h3>
-<div class="price">R$ <strong>500</strong></div>
-<p class="price-desc">Uma estrutura mais completa para transformar seu site em ferramenta comercial.</p>
-<ul>
-<li>site completo</li>
-<li>agendamentos ou catálogo</li>
-<li>pedidos</li>
-<li>retirada ou entrega</li>
-<li>estrutura comercial</li>
-</ul>
-<button class="btn btn-dark site-cart-add magnetic" data-product-id="commerce" type="button">Adicionar Commerce <span>+</span></button>
-</article>
-<article class="price-card featured reveal tilt-card" data-delay="140" data-tilt="">
-<div class="featured-label">PROJETO COMPLETO</div>
-<div class="price-code">03 / DOMINION</div>
-<h3>Olimpy Dominion</h3>
-<div class="price">R$ <strong>990</strong></div>
-<p class="price-desc">A Olimpy entra nos bastidores para assumir uma parte muito maior da presença digital.</p>
-<ul>
-<li>site completo incluso</li>
-<li>direção visual</li>
-<li>planejamento de conteúdo</li>
-<li>postagens para redes sociais</li>
-<li>organização da presença</li>
-<li>acompanhamento estratégico</li>
-</ul>
-<button class="btn btn-gold site-cart-add magnetic" data-product-id="dominion" type="button">Adicionar Dominion <span>+</span></button>
-</article>
-</div>
-<div class="maintenance reveal">
-<div>
-<span class="eyebrow">MANUTENÇÃO CONTÍNUA</span>
-<h3>R$ 120 <small>/ mês</small></h3>
-</div>
-<div>
-<p>
-            Independente do plano de R$ 250 ou R$ 500, a manutenção recorrente mantém o site vivo:
-            atualizamos informações, campanhas, novidades, textos e ajustes visuais em contato com o responsável pela empresa.
-          </p>
-</div>
-<button class="btn btn-dark maintenance-add magnetic" data-product-id="maintenance" type="button">Adicionar manutenção <span>+</span></button>
-</div>
-</section>
-<section class="section decision">
-<div class="decision-grid">
-<div class="decision-card reveal">
-<span class="eyebrow">FAZ SENTIDO SE...</span>
-<h3>Você quer construir marca, não improvisar presença.</h3>
-<ul>
-<li>quer parecer mais profissional</li>
-<li>quer aumentar valor percebido</li>
-<li>entende que imagem influencia confiança</li>
-<li>quer site e redes conversando entre si</li>
-<li>quer parar de parecer “só mais uma loja”</li>
-</ul>
-</div>
-<div class="decision-card reveal" data-delay="100">
-<span class="eyebrow">NÃO É PARA...</span>
-<h3>Quem acha que presença digital é só “postar qualquer coisa”.</h3>
-<ul>
-<li>quem busca somente o menor preço</li>
-<li>quem não quer investir na própria imagem</li>
-<li>quem não quer manter informações atualizadas</li>
-<li>quem prefere copiar concorrentes</li>
-<li>quem trata design apenas como decoração</li>
-</ul>
-</div>
-</div>
-</section>
-<section class="section contact" id="contato">
-<div class="section-index reveal">FALE COM A EQUIPE</div>
-<div class="contact-layout">
-<div class="contact-copy reveal">
-<span class="eyebrow">BRIEFING RÁPIDO · PEDIDO PERSONALIZADO</span>
-<h2 class="display">Tem algo específico em mente?<br/><em>Explique. A gente organiza.</em></h2>
-<p>Use este formulário quando o que você quer não estiver no catálogo ou quando precisar de orientação antes de escolher um pacote. O site distribui os novos atendimentos entre os dois responsáveis da Olimpy Arts.</p>
-<div class="founders">
-<span>ATENDIMENTO / FUNDADORES</span>
-<a href="https://instagram.com/gcleandroo" rel="noopener" target="_blank">@gcleandroo ↗</a>
-<a href="https://instagram.com/usantoos" rel="noopener" target="_blank">@usantoos ↗</a>
-<small>📌 WhatsApp distribuído automaticamente entre Leandro e Santos a cada novo atendimento iniciado pelo site.</small>
-</div>
-</div>
-<form class="contact-form reveal" id="leadForm">
-<div class="form-row">
-<label><span>Seu nome</span><input name="nome" placeholder="Como podemos te chamar?" required="" type="text"/></label>
-<label><span>Empresa / canal</span><input name="loja" placeholder="Nome da empresa, canal ou projeto" required="" type="text"/></label>
-</div>
-<label><span>O que você faz?</span><input name="segmento" placeholder="Ex.: loja, streamer, restaurante, estética, infoproduto..." required="" type="text"/></label>
-<div class="form-row">
-<label>
-<span>Quero falar sobre</span>
-<select id="planSelect" name="plano" required="">
-<option disabled="" selected="" value="">Selecione</option>
-<option>Site / landing page</option>
-<option>Thumbnail para YouTube</option>
-<option>Edição de vídeo</option>
-<option>Stream Pack</option>
-<option>Social Media / gestão</option>
-<option>Pedido personalizado fora do catálogo</option>
-<option>Ainda não sei — quero orientação</option>
-</select>
-</label>
-<label><span>Instagram (opcional)</span><input name="instagram" placeholder="@seuperfil" type="text"/></label>
-</div>
-<label><span>Explique o que você quer</span><textarea name="objetivo" placeholder="Ex.: preciso de uma landing para meu infoproduto, quero uma edição com cortes rápidos para Reels, preciso de um pack específico para minha live..." required="" rows="5"></textarea></label>
-<button class="btn btn-gold magnetic" type="submit">Enviar briefing pelo WhatsApp <span>↗</span></button>
-<small>📌 A mensagem será aberta no WhatsApp do próximo responsável da fila. Nenhum dado de cartão é solicitado aqui.</small>
-</form>
-</div>
-</section>
-<section class="section end-section">
-<div class="end-card reveal">
-
-<span class="eyebrow">SEU PRÓXIMO PASSO É SIMPLES</span>
-<h2>As pessoas compram o que entendem.<br/><em>Desejam o que sentem.</em></h2>
-<p>Se sua empresa já é boa, está na hora da imagem dela mostrar isso.</p>
-<a class="btn btn-gold magnetic" href="#contato">Começar um projeto <span>↗</span></a>
-</div>
-</section>
-</main>
-<div class="cart-overlay" hidden="" id="cartOverlay"></div>
-<aside aria-hidden="true" aria-label="Carrinho e finalização do pacote" class="cart-drawer" id="cartDrawer">
-<div class="cart-head"><div><span class="eyebrow">REVISE SEU PEDIDO</span><h2>Seu pacote</h2></div><button aria-label="Fechar carrinho" class="cart-close" id="closeCart" type="button">×</button></div>
-<div class="cart-scroll">
-<div class="cart-items" id="cartItems"><div class="cart-empty"><span>🛒</span><strong>Seu carrinho está vazio.</strong><p>Escolha um ou mais serviços para começar.</p></div></div>
-<section class="checkout-block coupon-block">
-<div class="checkout-title"><span>01</span><div><strong>Cupom de desconto</strong><small>Use se a equipe tiver enviado um código.</small></div></div>
-<div class="coupon-row"><input autocomplete="off" id="couponInput" placeholder="Digite seu cupom" type="text"/><button id="applyCoupon" type="button">Aplicar</button></div>
-<div aria-live="polite" class="coupon-feedback" id="couponFeedback"></div>
-</section>
-<section class="checkout-block">
-<div class="checkout-title"><span>02</span><div><strong>Sobre você e a empresa</strong><small>Esses dados montam o briefing inicial do atendimento.</small></div></div>
-<div class="checkout-fields">
-<label><span>Seu nome *</span><input id="checkoutName" placeholder="Como podemos te chamar?" type="text"/></label>
-<label><span>Empresa / marca *</span><input id="checkoutCompany" placeholder="Nome da empresa" type="text"/></label>
-<label><span>Seu WhatsApp *</span><input id="checkoutPhone" placeholder="(11) 99999-9999" type="tel"/></label>
-<label><span>Instagram</span><input id="checkoutInstagram" placeholder="@suaempresa" type="text"/></label>
-<label class="full-field"><span>Segmento</span><input id="checkoutSegment" placeholder="Ex.: loja, restaurante, estética, criador..." type="text"/></label>
-</div>
-</section>
-<section class="checkout-block">
-<div class="checkout-title"><span>03</span><div><strong>O que você está buscando? *</strong><small>Conte o principal objetivo para a Olimpy chegar no atendimento já entendendo sua necessidade.</small></div></div>
-<textarea id="checkoutObjective" placeholder="Ex.: quero profissionalizar a marca, melhorar as redes, criar um site e vender mais pelo digital..." rows="4"></textarea>
-</section>
-<section class="checkout-block">
-<div class="checkout-title"><span>04</span><div><strong>Forma de pagamento</strong><small>Simulação para você ter uma noção antes do atendimento.</small></div></div>
-<div class="payment-options" id="paymentOptions">
-<label class="payment-option active"><input checked="" name="shopPayment" type="radio" value="pix"/><span class="payment-symbol pix-symbol">◆</span><span><b>Pix</b><small>valor base do pacote</small></span></label>
-<label class="payment-option"><input name="shopPayment" type="radio" value="debit"/><span class="payment-symbol">▣</span><span><b>Débito</b><small>valor final confirmado no atendimento</small></span></label>
-<label class="payment-option"><input name="shopPayment" type="radio" value="credit"/><span class="payment-symbol visa-symbol">VISA</span><span><b>Crédito</b><small>simulação em até 12x</small></span></label>
-</div>
-<div class="installment-box" hidden="" id="installmentBox"><label><span>Parcelamento</span><select id="installmentSelect"></select></label><div class="installment-detail" id="installmentDetail"></div><small class="rate-note">Referência: tabela promocional pública do Link de Pagamento PagBank consultada em 03/09/2026. A taxa real será confirmada antes do pagamento.</small></div>
-</section>
-<section class="checkout-block checkout-notes-block">
-<div class="checkout-title"><span>05</span><div><strong>Observações</strong><small>Opcional.</small></div></div>
-<textarea id="checkoutNotes" placeholder="Prazo, referências, quantidade, detalhes ou qualquer dúvida antes de fechar." rows="3"></textarea>
-</section>
-</div>
-<div class="cart-summary">
-<div class="summary-line"><span>Subtotal</span><b id="cartSubtotal">R$ 0,00</b></div>
-<div class="summary-line discount-line" hidden="" id="discountLine"><span>Desconto</span><b id="cartDiscount">- R$ 0,00</b></div>
-<div class="summary-line fee-line" hidden="" id="feeLine"><span>Acréscimo do parcelamento</span><b id="cartFee">R$ 0,00</b></div>
-<div class="summary-total"><span>Total estimado</span><strong id="cartFinalTotal">R$ 0,00</strong></div>
-<div class="summary-installment" id="summaryInstallment"></div>
-<button class="finish-order-btn" disabled="" id="finishOrder" type="button">Finalizar pacote <span>↗</span></button>
-<p class="checkout-security">Nenhum número de cartão, validade ou CVV é solicitado aqui. A compra é concluída com um representante da Olimpy Arts.</p>
-</div>
-</aside>
-<button aria-label="Abrir carrinho" class="floating-cart" id="floatingCart" type="button"><span class="floating-cart-icon">🛒</span><span class="floating-cart-copy"><small>CARRINHO</small><b id="floatingCartTotal">R$ 0,00</b></span><span class="floating-cart-count" id="floatingCartCount">0</span></button>
-<div aria-hidden="true" class="bot-modal" hidden="" id="botModal">
-<div class="bot-backdrop" data-close-bot=""></div>
-<section aria-labelledby="botTitle" aria-modal="true" class="bot-window" role="dialog">
-<div class="bot-topbar">
-<div class="bot-avatar">OA</div>
-<div><strong id="botTitle">Atendimento Olimpy</strong><span><i></i> equipe online · pré-atendimento</span></div>
-<button aria-label="Fechar" class="bot-close" data-close-bot="" type="button">×</button>
-</div>
-<div class="bot-chat" id="botChat">
-<div class="bot-system">Seu pedido foi organizado. Nenhuma cobrança foi realizada.</div>
-<div class="bot-bubble bot-bubble-ai" id="botWelcome"></div>
-<div class="bot-bubble bot-bubble-ai bot-second" id="botNext"></div>
-<div class="bot-order-card" id="botOrderSummary"></div>
-</div>
-<div class="bot-actions">
-<p>Você poderá conversar com pessoas reais, mandar e ouvir áudios, tirar dúvidas e receber o link de pagamento no atendimento.</p>
-<button class="btn btn-gold" id="openWhatsAppOrder" type="button">Continuar com a equipe no WhatsApp <span>↗</span></button>
-<button class="bot-secondary" data-close-bot="" type="button">Voltar ao site</button>
-</div>
-</section>
-</div>
-<a aria-label="Falar no WhatsApp" class="floating-whatsapp" href="#contato" id="floatingWhatsApp">
-<span>WHATSAPP</span><b>↗</b>
-</a>
-<footer class="footer">
-<div class="footer-logo">OLIMPY <em>ARTS</em></div>
-<div class="footer-cols">
-<div>
-<span>INSTAGRAM</span>
-<a href="https://instagram.com/gcleandroo" target="_blank">@gcleandroo</a>
-<a href="https://instagram.com/usantoos" target="_blank">@usantoos</a>
-</div>
-<div>
-<span>CONTATO</span>
-<p>Leandro · +55 11 95448-6713<br/>Santos · +55 11 95142-2087<br/><small>Pedidos do site entram em rodízio automático.</small></p>
-</div>
-<div>
-<span>POSICIONAMENTO</span>
-<p>Sua marca na frente.<br/>A Olimpy cuidando dos bastidores.</p>
-</div>
-</div>
-<div class="footer-bottom">
-<span>© <span id="year"></span> OLIMPY ARTS</span>
-<span>BRASIL · ATENDIMENTO DIGITAL</span>
-</div>
-</footer>
-<script src="olimpy-whatsapp-direct-v9.js?v=20260922-2345"></script>
+  <div class="topline"></div>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="#inicio" aria-label="Olimpy Arts, início"><img src="assets/olimpy-arts-logo.png" alt="Logo Olimpy Arts" /></a>
+      <nav class="navlinks" aria-label="Navegação principal"><a href="#servicos">SERVIÇOS</a><a href="#sobre">SOBRE A OLIMPY</a><a href="#contato">CONTATO</a></nav>
+      <div class="navtools"><button class="iconbtn" id="openCart" aria-label="Abrir carrinho"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 4h2l2.3 11.1a2 2 0 0 0 2 1.6h8.9a2 2 0 0 0 2-1.6L22 8H6"/><circle cx="10" cy="20" r="1"/><circle cx="18" cy="20" r="1"/></svg><span class="badge" id="cartBadge">0</span></button></div>
+    </div>
+  </header>
+  <main>
+    <section class="hero" id="inicio"><div class="wrap hero-layout"><div class="hero-inner"><div class="eyebrow">Olimpy Arts | Design estratégico</div><h1>IMPACTO VISUAL.<br/><em>MARCA FORTE.</em></h1><p>Design pensado para destacar criadores, marcas e lojas. Uma identidade visual consistente começa com escolhas feitas para o seu público.</p><div class="hero-actions"><a class="cta" href="#servicos">Conheça os serviços</a><a class="cta outline" href="#contato">Fale com a gente</a></div><div class="proof">Thumbnails | Identidade visual | Social media</div></div><div class="phone-shell" aria-label="Prévia do perfil da Olimpy Arts no Instagram"><div class="phone-screen"><img src="assets/instagram-profile.png" alt="Perfil @olimpy.arts no Instagram"/><div class="hide-followed-row" aria-hidden="true"></div></div><span class="phone-speaker" aria-hidden="true"></span><span class="phone-camera" aria-hidden="true"></span></div></div></section>
+    <section class="section" id="servicos"><div class="wrap"><div class="sectionhead"><div><div class="eyebrow">Escolha por objetivo</div><h2>SERVIÇOS E VALORES</h2></div><p>Valores de exemplo baseados nos pacotes da Olimpy Arts. Os preços apresentados são simulados e podem ser substituídos pelos valores reais.</p></div>
+      <div class="service-group"><div class="service-group-head"><h3>Sites e estrutura para empresas</h3><p>Para apresentar sua empresa, organizar a oferta e transformar visitas em pedidos, agendamentos ou contatos qualificados.</p></div><div class="products">
+        <article class="product"><div class="product-icon"><img src="assets/service-01.jpg" alt="Trabalho da Olimpy Arts relacionado a Olimpy Presence" loading="lazy"/></div><h3>Olimpy Presence</h3><p>Vitrine digital para apresentar a empresa com confiança, explicar o que vende e levar o visitante ao contato.</p><div class="includes">Inclui site institucional responsivo, organização de serviços e diferenciais, CTAs para WhatsApp ou orçamento, seções comerciais e elementos de confiança.</div><span class="price">R$ 249,90<small>À vista | preço simulado</small></span><div class="product-foot"><span class="consult">Site institucional</span><button class="add" data-item="Olimpy Presence" data-price="249.90">Adicionar ao carrinho</button></div></article>
+        <article class="product"><div class="product-icon"><img src="assets/service-02.jpg" alt="Trabalho da Olimpy Arts relacionado a Olimpy Commerce" loading="lazy"/></div><h3>Olimpy Commerce</h3><p>Site como parte da operação comercial, com catálogo, pedidos, agendamento e caminhos de conversão.</p><div class="includes">Inclui site completo, catálogo, agenda ou pedidos, fluxos de retirada ou entrega quando aplicável, estrutura comercial e CTAs.</div><span class="price">R$ 499,90<small>À vista | preço simulado</small></span><div class="product-foot"><span class="consult">Site comercial</span><button class="add" data-item="Olimpy Commerce" data-price="499.90">Adicionar ao carrinho</button></div></article>
+        <article class="product"><div class="product-icon"><img src="assets/service-03.jpg" alt="Trabalho da Olimpy Arts relacionado a Olimpy Dominion" loading="lazy"/></div><h3>Olimpy Dominion</h3><p>Projeto amplo para alinhar site, direção visual e comunicação em uma linguagem única.</p><div class="includes">Inclui site completo, direção visual, planejamento de conteúdo, postagens para redes sociais, organização da presença e acompanhamento estratégico.</div><span class="price">R$ 989,90<small>À vista | preço simulado</small></span><div class="product-foot"><span class="consult">Projeto completo</span><button class="add" data-item="Olimpy Dominion" data-price="989.90">Adicionar ao carrinho</button></div></article>
+      </div></div>
+      <div class="service-group"><div class="service-group-head"><h3>YouTube, vídeo e streaming</h3><p>Para criadores que precisam de identidade e edição sem contratar um pacote empresarial inteiro.</p></div><div class="products">
+        <article class="product"><div class="product-icon"><img src="assets/service-04.jpg" alt="Trabalho da Olimpy Arts relacionado a Thumbnail Profissional" loading="lazy"/></div><h3>Thumbnail Profissional</h3><p>Capa criada para comunicar o tema do vídeo rapidamente, destacar o assunto e fortalecer o visual do canal.</p><div class="includes">Inclui composição personalizada, tipografia de impacto, tratamento visual e uma thumbnail por unidade.</div><span class="price">R$ 24,90<small>Por unidade | preço simulado</small></span><div class="product-foot"><span class="consult">Criação avulsa</span><button class="add" data-item="Thumbnail Profissional" data-price="24.90">Adicionar ao carrinho</button></div></article>
+        <article class="product"><div class="product-icon"><img src="assets/service-05.jpg" alt="Trabalho da Olimpy Arts relacionado a Edição Básica" loading="lazy"/></div><h3>Edição Básica</h3><p>Limpeza e montagem direta para deixar o conteúdo organizado e pronto para publicar.</p><div class="includes">Inclui cortes e ritmo básico, ajustes simples de áudio, texto ou título pontual e exportação para a plataforma combinada.</div><span class="price">R$ 44,90<small>Por edição | preço simulado</small></span><div class="product-foot"><span class="consult">Edição avulsa</span><button class="add" data-item="Edição Básica" data-price="44.90">Adicionar ao carrinho</button></div></article>
+        <article class="product"><div class="product-icon"><img src="assets/service-06.jpg" alt="Trabalho da Olimpy Arts relacionado a Edição Intermediária" loading="lazy"/></div><h3>Edição Intermediária</h3><p>Para vídeos que pedem mais dinâmica visual, melhor ritmo e acabamento acima do corte simples.</p><div class="includes">Inclui cortes dinâmicos, legendas ou elementos pontuais, transições e zooms quando fizer sentido, tratamento de áudio e ritmo.</div><span class="price">R$ 69,90<small>Por edição | preço simulado</small></span><div class="product-foot"><span class="consult">Edição avulsa</span><button class="add" data-item="Edição Intermediária" data-price="69.90">Adicionar ao carrinho</button></div></article>
+        <article class="product"><div class="product-icon"><img src="assets/service-07.jpg" alt="Trabalho da Olimpy Arts relacionado a Edição Completa Premium" loading="lazy"/></div><h3>Edição Completa Premium</h3><p>Acabamento mais trabalhado para conteúdos que precisam segurar atenção e transmitir uma produção profissional.</p><div class="includes">Inclui edição dinâmica completa, motion e textos, recursos visuais, tratamento de áudio cuidadoso e finalização pronta para publicação.</div><span class="price">R$ 119,90<small>Por edição | preço simulado</small></span><div class="product-foot"><span class="consult">Edição avulsa</span><button class="add" data-item="Edição Completa Premium" data-price="119.90">Adicionar ao carrinho</button></div></article>
+        <article class="product"><div class="product-icon"><img src="assets/service-08.jpg" alt="Trabalho da Olimpy Arts relacionado a Stream Pack Completo" loading="lazy"/></div><h3>Stream Pack Completo</h3><p>Identidade visual fechada para a live deixar de parecer configuração padrão e ter marca própria.</p><div class="includes">Inclui cena de início, intervalo ou final, facecam e overlay, painéis, alertas, elementos visuais e direção visual do pack.</div><span class="price">R$ 199,90<small>Pacote fechado | preço simulado</small></span><div class="product-foot"><span class="consult">Pacote completo</span><button class="add" data-item="Stream Pack Completo" data-price="199.90">Adicionar ao carrinho</button></div></article>
+      </div></div>
+      <div class="service-group"><div class="service-group-head"><h3>Gestão e crescimento de marca</h3><p>Para empresas que querem manter comunicação recorrente e coerente depois da estrutura inicial.</p></div><div class="products">
+        <article class="product"><div class="product-icon"><img src="assets/service-09.jpg" alt="Trabalho da Olimpy Arts relacionado a Social Media Essencial" loading="lazy"/></div><h3>Social Media Essencial</h3><p>Planejamento e criação para manter a marca organizada, profissional e ativa nas redes.</p><div class="includes">Inclui calendário editorial, artes e copies, direção de conteúdo e organização visual.</div><span class="price">R$ 889,90<small>A partir de / mês | preço simulado</small></span><div class="product-foot"><span class="consult">Gestão mensal</span><button class="add" data-item="Social Media Essencial" data-price="889.90">Adicionar ao carrinho</button></div></article>
+        <article class="product"><div class="product-icon"><img src="assets/service-10.jpg" alt="Trabalho da Olimpy Arts relacionado a Gestão Multicanal para Lojas" loading="lazy"/></div><h3>Gestão Multicanal para Lojas</h3><p>Organização da comunicação para Instagram, Facebook e Status do WhatsApp, evitando que cada canal pareça uma empresa diferente.</p><div class="includes">Inclui planejamento mensal, Instagram, Facebook, Status do WhatsApp, artes promocionais, copies e chamadas.</div><span class="price">R$ 1.189,90<small>A partir de / mês | preço simulado</small></span><div class="product-foot"><span class="consult">Gestão mensal</span><button class="add" data-item="Gestão Multicanal para Lojas" data-price="1189.90">Adicionar ao carrinho</button></div></article>
+      </div></div>
+      <div class="service-group"><div class="service-group-head"><h3>Manutenção contínua</h3><p>Atualizações recorrentes para o site continuar acompanhando a empresa.</p></div><div class="products">
+        <article class="product"><div class="product-icon"><img src="assets/service-11.jpg" alt="Trabalho da Olimpy Arts relacionado a Manutenção do Site" loading="lazy"/></div><h3>Manutenção do Site</h3><p>Manutenção recorrente que mantém o site atualizado e alinhado às novidades da empresa.</p><div class="includes">Inclui atualizações de informações, campanhas, novidades, textos e ajustes visuais em contato com o responsável pela empresa.</div><span class="price">R$ 119,90<small>Por mês | preço simulado</small></span><div class="product-foot"><span class="consult">Serviço mensal</span><button class="add" data-item="Manutenção do Site" data-price="119.90">Adicionar ao carrinho</button></div></article>
+      </div></div>
+    </div></section>
+    <section class="section about" id="sobre"><div class="wrap aboutgrid"><div class="about-logo"><img src="assets/olimpy-arts-logo.png" alt="Logo Olimpy Arts" /></div><div class="aboutcopy"><div class="eyebrow">Sobre a loja</div><h2>IDEIAS BEM PENSADAS.<br/>DESIGN COM PROPÓSITO.</h2><p>A Olimpy Arts é um estúdio de design voltado a criadores, marcas e lojas. Cada projeto é desenvolvido para traduzir a proposta do cliente em uma presença visual clara, profissional e consistente.</p><div class="values"><div class="value"><b>CRIATIVIDADE</b>Visual alinhado à sua marca</div><div class="value"><b>ESTRATÉGIA</b>Design pensado para comunicar</div><div class="value"><b>PERSONALIZAÇÃO</b>Projetos sob medida</div><div class="value"><b>PARCERIA</b>Conversa direta do briefing à entrega</div></div></div></div></section>
+    <section class="contact" id="contato"><div class="wrap"><div class="sectionhead"><div><div class="eyebrow">Fale com a equipe</div><h2>CONTATO E ATENDIMENTO</h2></div><p>Os pedidos iniciados no carrinho são distribuídos em rodízio compartilhado entre os dois responsáveis da Olimpy Arts.</p></div><div class="people"><article class="person"><h3>Leandro</h3><a href="https://www.instagram.com/gcleandroo/" target="_blank" rel="noopener">Instagram | @gcleandroo</a><a href="https://wa.me/5511954486713" target="_blank" rel="noopener"><svg class="whatsapp-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="currentColor"/><path d="M8.1 7.1c.3-.3.8-.3 1.1-.1l1.2 1.6c.2.3.2.7 0 1l-.6.7c.5 1.1 1.4 2 2.5 2.5l.7-.6c.3-.2.7-.2 1 0l1.6 1.2c.3.2.4.7.1 1.1l-.6.7c-.4.5-1 .7-1.6.6-3.4-.6-6.1-3.3-6.7-6.7-.1-.6.1-1.2.6-1.6z" fill="#fff"/></svg>WhatsApp | +55 11 95448-6713</a></article><article class="person"><h3>Santos</h3><a href="https://www.instagram.com/usantoos/" target="_blank" rel="noopener">Instagram | @usantoos</a><a href="https://wa.me/5511951422087" target="_blank" rel="noopener"><svg class="whatsapp-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="currentColor"/><path d="M8.1 7.1c.3-.3.8-.3 1.1-.1l1.2 1.6c.2.3.2.7 0 1l-.6.7c.5 1.1 1.4 2 2.5 2.5l.7-.6c.3-.2.7-.2 1 0l1.6 1.2c.3.2.4.7.1 1.1l-.6.7c-.4.5-1 .7-1.6.6-3.4-.6-6.1-3.3-6.7-6.7-.1-.6.1-1.2.6-1.6z" fill="#fff"/></svg>WhatsApp | +55 11 95142-2087</a></article></div><p class="contact-note">Cada novo pedido do carrinho alterna entre Leandro e Santos, em uma fila compartilhada do site.</p></div></section>
+  </main>
+  <footer><div class="wrap foot"><a class="footbrand" href="#inicio"><img src="assets/olimpy-arts-logo.png" alt=""/>Olimpy Arts</a><span>Design estratégico para marcas, criadores e lojas.</span><div class="footlinks"><a href="https://www.instagram.com/gcleandroo/" target="_blank" rel="noopener">@gcleandroo</a><a href="https://www.instagram.com/usantoos/" target="_blank" rel="noopener">@usantoos</a><a href="#contato">WhatsApp</a></div></div></footer>
+  <div class="overlay" id="cartOverlay" aria-hidden="true"><aside class="drawer" role="dialog" aria-modal="true" aria-labelledby="cartTitle"><div class="drawerhead"><h2 id="cartTitle">SEU CARRINHO</h2><button class="close" id="closeCart" aria-label="Fechar carrinho">×</button></div><div class="cartitems" id="cartItems"><div class="empty">Seu carrinho está vazio.<br/>Adicione um serviço para começar.</div></div><div class="cartprice" id="cartPrice"></div><div class="cartbottom"><p>Preços simulados. Confirme os valores finais com a Olimpy Arts.</p><a class="cta" id="checkout" href="https://wa.me/5511954486713" target="_blank" rel="noopener"><svg class="whatsapp-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="currentColor"/><path d="M8.1 7.1c.3-.3.8-.3 1.1-.1l1.2 1.6c.2.3.2.7 0 1l-.6.7c.5 1.1 1.4 2 2.5 2.5l.7-.6c.3-.2.7-.2 1 0l1.6 1.2c.3.2.4.7.1 1.1l-.6.7c-.4.5-1 .7-1.6.6-3.4-.6-6.1-3.3-6.7-6.7-.1-.6.1-1.2.6-1.6z" fill="#fff"/></svg>Solicitar orçamento no WhatsApp</a></div></aside></div>
+  <div class="toast" id="toast">Serviço adicionado ao carrinho</div>
+  <script>
+    const cart={};const prices=Object.fromEntries([...document.querySelectorAll('.add')].map(button=>[button.dataset.item,Number(button.dataset.price)]));const overlay=document.getElementById('cartOverlay');const itemsEl=document.getElementById('cartItems');const badge=document.getElementById('cartBadge');const checkout=document.getElementById('checkout');const cartPrice=document.getElementById('cartPrice');const formatPrice=value=>new Intl.NumberFormat('pt-BR',{style:'currency',currency:'BRL'}).format(value);
+    function cartCount(){return Object.values(cart).reduce((a,b)=>a+b,0)}
+    function refresh(){badge.textContent=cartCount();const entries=Object.entries(cart);if(!entries.length){itemsEl.innerHTML='<div class="empty">Seu carrinho está vazio.<br/>Adicione um serviço para começar.</div>';cartPrice.textContent=''}else{itemsEl.innerHTML=entries.map(([name,count])=>`<div class="cartrow"><div><b>${name}</b><small>${count} × ${formatPrice(prices[name])} | preço simulado</small></div><div class="qty"><button aria-label="Remover um ${name}" data-action="minus" data-name="${name}">−</button><span>${count}</span><button aria-label="Adicionar um ${name}" data-action="plus" data-name="${name}">+</button></div></div>`).join('');const total=entries.reduce((sum,[name,count])=>sum+prices[name]*count,0);cartPrice.innerHTML=`Estimativa do carrinho: <strong>${formatPrice(total)}</strong> <small>(preço simulado)</small>`}
+      const list=entries.map(([name,count])=>`${count} × ${name} (${formatPrice(prices[name])}, preço simulado)`).join('; ');const total=entries.reduce((sum,[name,count])=>sum+prices[name]*count,0);const message=entries.length?`Olá, Olimpy Arts! Quero pedir um orçamento para: ${list}. Estimativa simulada: ${formatPrice(total)}.`:'Olá, Olimpy Arts! Quero conversar sobre um projeto.';checkout.dataset.message=message}refresh();
+    checkout.addEventListener('click',async event=>{event.preventDefault();if(checkout.dataset.busy==='true')return;checkout.dataset.busy='true';const prior=checkout.innerHTML;checkout.innerHTML='Preparando atendimento…';const tab=window.open('about:blank','_blank');try{const response=await fetch('/api/next-whatsapp',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({message:checkout.dataset.message||''}),cache:'no-store'});if(!response.ok)throw new Error('Não foi possível selecionar o contato agora.');const {number:phone}=await response.json();const url='https://wa.me/'+phone+'?text='+encodeURIComponent(checkout.dataset.message||'');if(tab)tab.location.href=url;else window.location.href=url;close()}catch(error){if(tab)tab.close();const toast=document.getElementById('toast');toast.textContent='Não conseguimos abrir o WhatsApp agora. Tente novamente.';toast.classList.add('show');setTimeout(()=>toast.classList.remove('show'),3500)}finally{checkout.dataset.busy='false';checkout.innerHTML=prior}});refresh();
+    document.querySelectorAll('.add').forEach(btn=>btn.addEventListener('click',()=>{const name=btn.dataset.item;cart[name]=(cart[name]||0)+1;refresh();const toast=document.getElementById('toast');toast.textContent='Serviço adicionado ao carrinho';toast.classList.add('show');setTimeout(()=>toast.classList.remove('show'),1500)}));
+    itemsEl.addEventListener('click',e=>{const b=e.target.closest('button[data-action]');if(!b)return;const n=b.dataset.name;cart[n]=Math.max(0,(cart[n]||0)+(b.dataset.action==='plus'?1:-1));if(!cart[n])delete cart[n];refresh()});
+    function open(){overlay.classList.add('open');overlay.setAttribute('aria-hidden','false');document.body.style.overflow='hidden'}function close(){overlay.classList.remove('open');overlay.setAttribute('aria-hidden','true');document.body.style.overflow=''}
+    document.getElementById('openCart').addEventListener('click',open);document.getElementById('closeCart').addEventListener('click',close);overlay.addEventListener('click',e=>{if(e.target===overlay)close()});document.addEventListener('keydown',e=>{if(e.key==='Escape')close()});
+  </script>
 </body>
 </html>

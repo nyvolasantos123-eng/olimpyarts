@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://olimpyarts.netlify.app/sitemap.xml
